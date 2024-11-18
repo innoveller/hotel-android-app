@@ -17,10 +17,10 @@ android {
     }
     signingConfigs {
         create("release") {
-            storeFile = File("C:\\Users\\Developer\\AndroidStudioProjects\\HotelBookingAndroidApp\\app\\my-release-key.jks")  // Use `File` instead of `file` in Kotlin DSL
-            storePassword = "123456"         // Add `=` for assignments
-            keyAlias = "my-alias"
-            keyPassword = "123456"
+            storeFile = File("storeFile")  // Use `File` instead of `file` in Kotlin DSL
+            storePassword = "storePassword"         // Add `=` for assignments
+            keyAlias = "keyAlias"
+            keyPassword = "keyPassword"
         }
     }
 
