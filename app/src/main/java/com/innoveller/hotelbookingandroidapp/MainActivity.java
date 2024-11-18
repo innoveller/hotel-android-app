@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView.addJavascriptInterface(new WebAppInterface(this, appUserToken), "AndroidInterface");
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://32bf-37-111-41-127.ngrok-free.app/agents/" + agentId + "/androidwebview/start");
+        webView.loadUrl("https://hotel-aggregator-dev.herokuapp.com/agents/" + agentId + "/androidwebview/start");
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             progressBar.setVisibility(View.GONE);
