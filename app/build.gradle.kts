@@ -43,6 +43,16 @@ android {
             )
         }
     }
+
+    applicationVariants.all {
+        outputs.all {
+            if (buildType.name == "release") {
+                val newApkName = "My App Name.apk"
+                (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName = newApkName
+            }
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
